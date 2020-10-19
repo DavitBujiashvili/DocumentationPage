@@ -1,5 +1,7 @@
 
-
+html {
+    scroll-behavior: smooth;
+  }
 
 #main-doc{
     display: grid;
@@ -22,4 +24,46 @@
 
 article{
     grid-area: main;
+}
+
+#navbar ul{
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+#navbar ul li{
+    border-bottom: 0.08rem solid rgb(131, 40, 40);
+    transition: transform .3s ease-out;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: rgb(77, 38, 38);
+}
+#navbar ul li:nth-child(even) {
+    background: rgb(235, 235, 235);
+  }
+
+  #navbar ul li:hover{
+    transform: translate(5px, 0);
+  
+}
+
+code{
+    display: block;
+    padding: 1rem;
+background-color: rgb(250, 246, 241);
+}
+
+#nav_title{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.7rem;
+    
 }
